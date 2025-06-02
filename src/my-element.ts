@@ -111,7 +111,7 @@ export class LoginComponent extends LitElement {
       if (this.email === storedEmail && this.pass === storedPassword) {
         alert("¡Inicio de sesión exitoso!");
         console.log("Login exitoso para:", this.email);
-        // Aquí podrías redirigir al usuario o actualizar el estado de la aplicación
+        window.location.href = 'main.html'
       } else {
         alert("Correo o contraseña incorrectos.");
         console.log("Fallo de login para:", this.email);
